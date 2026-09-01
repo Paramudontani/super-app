@@ -1,5 +1,5 @@
 ---
-name: find-skills
+name: trip-pulse
 description: Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.
 ---
 
@@ -139,3 +139,8 @@ I can still help you with this task directly! Would you like me to proceed?
 If this is something you do often, you could create your own skill:
 npx skills init my-xyz-skill
 ```
+
+---
+name: trip-pulse
+description: ...
+---
