@@ -1,10 +1,18 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useAppStore } from '@/store/useAppStore';
 
 export const HomeContent = () => {
   const { currentCategory, currency } = useAppStore();
+  const [mounted, setMounted] = useState(false);
+
+  // ป้องกัน Hydration Error ระหว่าง Server กับ Client
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
