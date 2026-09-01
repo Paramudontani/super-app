@@ -1,3 +1,15 @@
+import { Navbar } from '@/components/common/Navbar';
+import { HomeContent } from '@/components/modules/HomeContent';
+
+export default function Home() {
+  return (
+    <main className="min-bg-gray-50 min-h-screen">
+      <Navbar />
+      <HomeContent />
+    </main>
+  );
+}
+
 import Image from "next/image";
 
 export default function Home() {
